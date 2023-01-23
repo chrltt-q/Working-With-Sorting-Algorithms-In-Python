@@ -38,10 +38,13 @@ def merge_sort(array):
             j += 1
             k += 1
 
+        print("Left Array:", left_array)
+        print("Right Array:", right_array)
+
 
 print("* * * * * * * * * * * * * * * Merge Sort * * * * * * * * * * * * * * *")
-array_test = [46, 17, 16, 53, 83, 7, 13, 62, 44, 14]
-print("Original Array:", array_test, "\n")
+my_nums = [46, 17, 16, 53, 83, 7, 13, 62, 44, 14]
+print("Original Array:", my_nums, "\n")
 print("Process:")
-merge_sort(array_test)
-print("\nSorted Array Using Merge Sort:", array_test)
+merge_sort(my_nums)
+print("\nSorted Array Using Merge Sort:", my_nums)
