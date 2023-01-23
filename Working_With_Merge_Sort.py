@@ -28,3 +28,13 @@ def merge_sort(array):
             j += 1
         k += 1
 
+        while i < len(left_array):
+            array[k] = left_array[i]
+            i += 1
+            k += 1
+
+        while j < len(right_array):
+            array[k] = right_array[j]
+            j += 1
+            k += 1
+
