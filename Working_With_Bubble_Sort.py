@@ -13,4 +13,12 @@ def bubble_sort(my_nums):
                 temp = my_nums[j]
                 my_nums[j] = my_nums[j + 1]
                 my_nums[j + 1] = temp
+                print(my_nums)
 
+
+print("* * * * * * * * * * * * * * * Bubble Sort * * * * * * * * * * * * * * *")
+my_nums = [46, 17, 16, 53, 83, 7, 13, 62, 44, 14]
+print("Original Array:", my_nums, "\n")
+print("Process:")
+bubble_sort(my_nums)
+print("\nSorted Array Using Bubble Sort:", my_nums)
