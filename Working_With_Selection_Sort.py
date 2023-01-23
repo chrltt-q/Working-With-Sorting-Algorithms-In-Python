@@ -16,8 +16,12 @@ def selection_sort(my_nums):
         my_nums[i] = my_nums[minpos]
         my_nums[minpos] = temp
 
+        print(my_nums)
 
+
+print("* * * * * * * * * * * * * * * Selection Sort * * * * * * * * * * * * * * *")
 my_nums = [46, 17, 16, 53, 83, 7, 13, 62, 44, 14]
-print("Original array:", my_nums, "\n")
+print("Original Array:", my_nums, "\n")
+print("Process:")
 selection_sort(my_nums)
 print("\nSorted Array Using Selection Sort:", my_nums)
