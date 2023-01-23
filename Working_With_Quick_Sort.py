@@ -6,12 +6,9 @@ print("*** Sir Danilo Madrigalejos ***\n")
 # This code implements the quick sort algorithm
 
 
-def quick_sort(array, left, right):
-    if left < right:
-        partition_pos = partition(array, left, right)
-        quick_sort(array, left, partition_pos -1)
-        quick_sort(array, partition_pos + 1, right)
-        print(my_nums)
+def quick_sort(array):
+    length = len(array)
+
 
 
 
