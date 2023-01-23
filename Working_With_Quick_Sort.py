@@ -11,25 +11,13 @@ def quick_sort(array, left, right):
         partition_pos = partition(array, left, right)
         quick_sort(array, left, partition_pos -1)
         quick_sort(array, partition_pos + 1, right)
+        print(my_nums)
 
 
-def partition(array, left, right):
-    i = left
-    j = right
-    pivot = array[right]
 
-    while i < j:
-        while i < right and array[i] < pivot:
-            i += 1
-
-        while j > left and array[j] > pivot:
-            j -= 1
-
-        if i < j:
-            array[i], array[j] = array[j], array[i]
-
-    if array[i] > pivot:
-        array[i], array[right] = array[right], array[i]
-
-    return i
-
+print("* * * * * * * * * * * * * * * Quick Sort * * * * * * * * * * * * * * *")
+my_nums = [46, 17, 16, 53, 83, 7, 13, 62, 44, 14]
+print("Original Array:", my_nums, "\n")
+print("Process:")
+quick_sort(my_nums)
+print("\nSorted Array Using QuickSort:", my_nums)
