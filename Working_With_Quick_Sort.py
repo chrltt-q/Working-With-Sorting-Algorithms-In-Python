@@ -22,12 +22,10 @@ def quick_sort(array):
         else:
             lesser_elements.append(item)
 
-    print(quick_sort(lesser_elements) + [pivot] + quick_sort(greater_elements))
     return quick_sort(lesser_elements) + [pivot] + quick_sort(greater_elements)
 
 
 print("* * * * * * * * * * * * * * * Quick Sort * * * * * * * * * * * * * * *")
 my_nums = [46, 17, 16, 53, 83, 7, 13, 62, 44, 14]
 print("Original Array:", my_nums, "\n")
-print("Process:")
 print("\nSorted Array Using QuickSort:", quick_sort(my_nums))
